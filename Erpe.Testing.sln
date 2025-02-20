@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Erpe.Testing", "Erpe.Testing\Erpe.Testing.csproj", "{CD51BA46-2079-4A78-AD9F-46EB637CEA5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Erpe.Testing.Tests", "Erpe.Testing.Tests\Erpe.Testing.Tests.csproj", "{B810AC83-4CCF-4DAB-B510-E58B5976A279}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD51BA46-2079-4A78-AD9F-46EB637CEA5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD51BA46-2079-4A78-AD9F-46EB637CEA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD51BA46-2079-4A78-AD9F-46EB637CEA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD51BA46-2079-4A78-AD9F-46EB637CEA5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B810AC83-4CCF-4DAB-B510-E58B5976A279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B810AC83-4CCF-4DAB-B510-E58B5976A279}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B810AC83-4CCF-4DAB-B510-E58B5976A279}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B810AC83-4CCF-4DAB-B510-E58B5976A279}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47E4AD83-31F1-41D6-8533-61CD2162533A}
+	EndGlobalSection
+EndGlobal
