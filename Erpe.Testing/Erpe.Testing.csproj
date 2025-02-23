@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <LangVersion>preview</LangVersion>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    
+    <IsPackable>true</IsPackable>
+
+    <Authors>Frank Hambach</Authors>
+    <Description>Bundles essential unit testing libraries, analyzers, and custom attributes to streamline testing across personal projects.</Description>
+    <Copyright>Copyright (c) Frank Hambach 2024</Copyright>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>test;testing;assert;autodata</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="build/**" Pack="true" PackagePath="" />
+    <None Update="tools/Erpe.Testing.globalconfig" Pack="true" PackagePath="" />
+    <None Include="../icon.png" Pack="true" PackagePath="/" />
+    <None Include="../README.md" Pack="true" PackagePath="/" />
+    <Content Update="@(Content)" Pack="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.18.1" />
+    <PackageReference Include="AutoFixture.AutoNSubstitute" Version="4.18.1" />
+    <PackageReference Include="AutoFixture.NUnit3" Version="4.18.1" />
+    <PackageReference Include="Bogus" Version="35.6.1" />
+    <PackageReference Include="coverlet.msbuild" Version="6.0.4" PrivateAssets="none" />
+    <PackageReference Include="Erpe.Analyzers" Version="1.0.0" PrivateAssets="none" />
+    <PackageReference Include="FluentAssertions" Version="7.1.0" />
+    <PackageReference Include="FluentAssertions.Analyzers" Version="0.34.1" PrivateAssets="none" />
+    <PackageReference Include="JetBrains.Annotations" Version="2024.3.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" PrivateAssets="none" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="all" />
+    <PackageReference Include="NodaTime.Bogus" Version="3.0.2" />
+    <PackageReference Include="NSubstitute" Version="5.3.0" />
+    <PackageReference Include="NSubstitute.Analyzers.CSharp" Version="1.0.17" PrivateAssets="none" />
+    <PackageReference Include="NUnit" Version="3.14.0" />
+    <PackageReference Include="NUnit.Analyzers" Version="4.6.0" PrivateAssets="none" />
+    <PackageReference Include="NUnit3TestAdapter" Version="5.0.0" PrivateAssets="none" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
+  </ItemGroup>
+
+</Project>
