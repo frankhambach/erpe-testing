@@ -14,13 +14,15 @@ using NUnit.Framework;
 public class InlineAutoCustomizedDataAttributeTests
 {
     [Test]
-    [InlineAutoCustomizedData(42)]
+    [InlineAutoCustomizedData(20, 22)]
+    [InlineAutoCustomizedData(40, 2)]
     public void
         InlineAutoCustomizedDataAttribute_ShouldUseInlineDataAndCreateValuesUsingCustomizations_WhenUsedOnTestMethod(
-            int number,
+            int firstNumber,
+            int secondNumber,
             TestUser user)
     {
-        number.Should().Be(42);
+        (firstNumber + secondNumber).Should().Be(42);
         user.Name.Should().Be("Default Name");
     }
 

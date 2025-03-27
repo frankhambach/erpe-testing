@@ -8,7 +8,7 @@ using System;
 using AutoFixture;
 using AutoFixture.AutoNSubstitute;
 
-[AttributeUsage(AttributeTargets.Method)]
+[AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
 public sealed class InlineAutoCustomizedDataAttribute(params object[] arguments) : AutoFixture.NUnit3.InlineAutoDataAttribute(
     () => new Fixture().Customize(
             new AutoNSubstituteCustomization
